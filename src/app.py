@@ -92,7 +92,7 @@ def blog_posts(blog_id):
 
     return render_template('posts.html', posts=posts, blog_title=blog.title, blog_id=blog._id)
 
-
+##
 @app.route('/posts/new/<string:blog_id>', methods=['POST', 'GET'])
 def create_new_post(blog_id):
     if request.method == 'GET':
