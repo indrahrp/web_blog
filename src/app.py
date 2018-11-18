@@ -85,6 +85,8 @@ def create_new_blog():
 
 @app.route('/posts/<string:blog_id>')
 def blog_posts(blog_id):
+
+
     blog = Blog.from_mongo(blog_id)
     posts = blog.get_posts()
 
